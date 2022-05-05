@@ -1,0 +1,56 @@
+<section class="py-5 bg-light" id="dataset">
+  <div class="container px-5">
+    <div class="row gx-5 justify-content-center">
+      <div class="col-md-10 col-sm-12">
+        <div class=" text-center">
+          <h2 class="my-2">The Geometric Shape Mating Dataset</h2>
+        </div>
+
+        <img class="img-fluid" src="img/dataset.png">
+        <p class="small">
+          Figure: <b>Dataset overview.</b>
+          (<i>Left</i>) Our dataset is composed of object meshes from three categories.
+          (<i>Middle</i>) We define five different types of cut functions. Each object
+          mesh can then be cut with many different ways using varying parametric cut functions.
+          (<i>Right</i>) Finally, each pair of parts can be randomized with an initial SE(3) pose.
+          In our dataset, we also generate solid and shell/hollow variations of each
+          shape, when cutting a mesh to create different mating interfaces for the same problem instance.
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container pr-5">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="list-group" id="dataset-classes">
+        </div>
+      </div>
+      <div class="col-md-10">
+        <nav>
+          <div class="nav nav-tabs" id="tab-dataset" role="tablist">
+            <button class="nav-link active" id="tab-dataset-img-button" data-bs-toggle="tab" data-bs-target="#tab-dataset-img" type="button" role="tab" aria-controls="tab-dataset-img" aria-selected="true">Images</button>
+            <button class="nav-link" id="tab-dataset-3d-button" data-bs-toggle="tab" data-bs-target="#tab-dataset-3d" type="button" role="tab" aria-controls="tab-dataset-3d" aria-selected="false" data-loaded="false">Object Viewer</button>
+          </div>
+        </nav>
+
+        <div class="tab-content" id="tabContent-dataset">
+          <div class="tab-pane fade show active" id="tab-dataset-img" role="tabpanel" aria-labelledby="tab-dataset-img-button">
+            <div class="row pt-2">
+              <div class="col-md-8 col-sm-12"><img class="img-fluid" src="img/dataset/mug1.png"></div>
+              <div class="col-md-8 col-sm-12"><img class="img-fluid" src="img/dataset/mug2.png"></div>
+              <div class="col-md-8 col-sm-12"><img class="img-fluid" src="img/dataset/mug3.png"></div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tab-dataset-3d" role="tabpanel" aria-labelledby="tab-dataset-3d-button">
+            <div class="row g-0">
+              <iframe id="dataset-iframe" src="models/dataset-bag.html" width="100%" height=800></iframe>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

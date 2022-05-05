@@ -1,0 +1,31 @@
+<div class="container pr-5 pt-5">
+  <div class="row">
+    <div class="col-2">
+      <div class="list-group" id="visual-classes">
+      </div>
+    </div>
+    <div class="col-10">
+      <nav>
+        <div class="nav nav-tabs" id="tab-visual" role="tablist">
+          <button class="nav-link active" id="tab-visual-img-button" data-bs-toggle="tab" data-bs-target="#tab-visual-img" type="button" role="tab" aria-controls="tab-visual-img" aria-selected="true">Images</button>
+          <button class="nav-link" id="tab-visual-3d-button" data-bs-toggle="tab" data-bs-target="#tab-visual-3d" type="button" role="tab" aria-controls="tab-visual-3d" aria-selected="false" data-loaded="false">Object Viewer</button>
+        </div>
+      </nav>
+      <div class="tab-content" id="tabContent-visual">
+        <div class="tab-pane fade show active" id="tab-visual-img" role="tabpanel" aria-labelledby="tab-visual-img-button">
+          <img class="img-fluid" src="img/visual-results-standard-2.png">
+          <img class="img-fluid" src="img/visual-results-standard-1.png">
+        </div>
+        <div class="tab-pane fade" id="tab-visual-3d" role="tabpanel" aria-labelledby="tab-visual-3d-button">
+          <div class="row g-0">
+            <iframe id="visual-iframe" src="models/visual-Example1" width="100%" height="560"></iframe>
+          </div>
+        </div>
+      </div>
+      <p class="small">
+        Figure: <b>Visual results of pairwise 3D geometric shape mating.</b>
+        NSM accurately predicts 3D poses that assemble the two input shapes.
+      </p>
+    </div>
+  </div>
+</div>

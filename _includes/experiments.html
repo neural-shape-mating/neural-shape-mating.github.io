@@ -1,0 +1,55 @@
+<section class="py-5" id="experiments">
+  <div class="container px-5">
+    <div class="row gx-5 justify-content-center">
+      <div class="col-md-10 col-sm-12">
+        <div class=" text-center">
+          <h2 class="my-2">Experimental Results</h2>
+        </div>
+        <h4 class="mt-4 pt-4">Evaluations of Pairwise Geometric Shape Mating</h4>
+
+        <img class="img-fluid" src="img/quantitative-results-standard.png">
+
+
+        <p class="small mb-4 pb-4">
+          Table: <b>Experimental results of geometric shape mating.</b>
+          <i>R</i> and <i>T</i> denote rotation and translation, respectively.
+          Lower is better on all metrics.
+          It is worth noting that many methods can get reasonably close in position,
+          but be completely off in orientation as demonstrated by the RMSE error in rotation.
+        </p>
+        
+      </div>
+    </div>
+  </div>
+
+  {% include experiments-visual.html %}
+
+  <div class="container px-5">
+    <div class="row gx-5 justify-content-center">
+      <div class="col-md-10 col-sm-12">
+
+        <h4 class="mt-4 pt-4">Evaluations of Unseen Category Geometric Shape Mating</h4>
+        <img class="img-fluid" src="img/quantitative-results-unseen-categories.png">
+        <p class="small">
+          Table: <b>Generalization: Unseen category geometric shape mating.</b>
+          <i>R</i> and <i>T</i> denote rotation and translation, respectively.
+          Lower is better on all metrics.
+          The test set contains shape pairs from the box and bag categories.
+          The training set contains shape pairs from the remaining 9 categories.
+        </p>
+
+        <h4 class="mt-4 pt-4">Evaluations of Unseen Cut Type Geometric Shape Mating</h4>
+        <img class="img-fluid" src="img/quantitative-results-unseen-cut-types.png">
+        <p class="small">
+          Table: <b>Generalization: Unseen cut type geometric shape mating.</b>
+          <i>R</i> and <i>T</i> denote rotation and translation, respectively.
+          Lower is better on all metrics.
+          The training set contains the planar, sine, square and pulse cut types.
+          The test set contains the parabolic cut type.
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+</section>
